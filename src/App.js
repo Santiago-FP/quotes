@@ -8,7 +8,7 @@ function App() {
   //Variables y state
   const allQuotes = quotes;
   const colors = ["red","blue","yellow","purple","green","orange"];
-  const [quoteAndColor, setQuoteAndColor] = useState({quote:"hello",color:"white"});
+  const [quoteAndColor, setQuoteAndColor] = useState({quote:[allQuotes[0].quote,allQuotes[0].author],color:"white"});
 //Funcion que da un numero al azar, varia con la longitud
   function random(length) {
     return Math.floor(Math.random() * length)
